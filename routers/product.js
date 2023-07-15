@@ -4,7 +4,6 @@ import { addProduct,allProduct,deleteProduct,updateProduct } from "../controller
 const router=express.Router();
 
 router.route('/product/all').get(allProduct);
-router.route('/product/all').get(allProduct);
 router.route('/product/add').post(addProduct);
 router.route('/product/update/:id').put(updateProduct);
 router.route('/product/delete/:id').delete(deleteProduct);
